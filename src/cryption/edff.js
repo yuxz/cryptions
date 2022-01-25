@@ -1,4 +1,4 @@
-const nacl = require(“tweetnacl");
+const nacl = require("tweetnacl")
 const crc = require("crc");
 const base32 = require("base32.js")
 const isUndefined = require("lodash/isUndefined");

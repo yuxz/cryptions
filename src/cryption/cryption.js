@@ -17,7 +17,7 @@ const padding = crypto.constants.RSA_PKCS1_PADDING;
     var md5 = fsHash.digest("hex");
     console.log("MD5 of message is：%s", md5);
     callback(md5);
-  },
+  }
 
 	/**
 	 * Using public key to encrypt
@@ -37,7 +37,7 @@ const padding = crypto.constants.RSA_PKCS1_PADDING;
 				callback(encrypted);
 			}
 		});
-	},
+	}
 
  /**
 	* Using private key to decrypt
@@ -56,4 +56,4 @@ const padding = crypto.constants.RSA_PKCS1_PADDING;
         callback(decrypted);
       }
     });
-  },
+  }

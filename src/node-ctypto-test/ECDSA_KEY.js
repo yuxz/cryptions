@@ -73,12 +73,12 @@ module.exports = class ECDSA_KEY  {
       // referencing implementation of the Marshal() method of https://golang.org/src/crypto/elliptic/elliptic.go
       buff = pointToOctet(this._key);
     } else {
-      buff = pointToOctet(this.getPublicKey()._key);
+      //buff = pointToOctet(this.getPublicKey()._key);
     }
 		console.log("buffer:", buff)
 
     // always use SHA256 regardless of the key size in effect
-    return Hash.SHA2_256(buff);
+    return //Hash.SHA2_256(buff);
   }
 
   isSymmetric() {
